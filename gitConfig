@@ -2,11 +2,10 @@
   //gerrit push命令
   review = "!f() { git push -u ${1:-origin} HEAD:`git config branch.$(git name-rev --name-only HEAD).merge | sed -e 's@refs/heads/@refs/for/@'`; }; f"
  //pull 命令
-        up = pull --rebase
-	co = checkout
-	br = branch
-	st = status
-	d = diff
-
+  up = pull --rebase
+  co = checkout
+  br = branch
+  st = status
+  d = diff
 
 
